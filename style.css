@@ -1,11 +1,11 @@
 @media screen and (max-width: 2500px) {
   body {
     margin: auto;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     background-image: url("image_background.jpg");
     background-size: cover;
-    position: relative;
+    position: absolute;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif;
@@ -63,7 +63,7 @@
   }
   #imageLogo {
     width: 30em;
-    max-width: 100%;
+    max-width: 100vw;
     margin: auto;
     margin-top: 1em;
     margin-left: 3em;
@@ -114,7 +114,7 @@
     width: 90%;
     height: auto;
     position: relative;
-    padding-top: 15em;
+    padding-top: 10em;
     /* background-color: whitesmoke; */
     display: flex;
     justify-content: center;
@@ -149,19 +149,53 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    position: relative;
   }
 
   .card p {
-    font-family: Courier, monospace;
-    font-size: 1.1em;
-    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 1.3em;
+    margin-top: 220px;
+    position: absolute;
   }
   .card img {
     max-width: 240px;
-    max-height: 150px;
+    max-height: 170px;
     min-width: 240px;
-    min-height: 150px;
+    min-height: 170px;
     width: auto;
     height: auto;
+  }
+
+  .middle.doubts {
+    margin: auto;
+    width: 90%;
+    height: auto;
+    position: relative;
+    padding-top: 10em;
+    /* background-color: whitesmoke; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #doubts {
+    flex-direction: column;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: auto;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+  }
+  .cards.doubt {
+    background-color: white;
+    border-radius: 2em;
+    width: 60vw;
+    margin: 1em;
+    padding: 2em;
+    flex-direction: column;
   }
 }
