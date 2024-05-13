@@ -198,4 +198,16 @@
     padding: 2em;
     flex-direction: column;
   }
+  .middle.register {
+    margin: auto;
+    width: 90%;
+    height: auto;
+    position: relative;
+    padding-top: 10em;
+    /* background-color: whitesmoke; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
 }

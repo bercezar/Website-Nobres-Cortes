@@ -160,5 +160,35 @@
         </div>
       </div>
     </div>
+    <div class="middle register">
+      <div class="title">
+        <h1 class="inform">CADASTRAR</h1>
+        <hr style="width: 50%; text-align: left" />
+      </div>
+      <div id="forms">
+        <form method="post">
+          <label>Nome: <input type="text" placeholder="Digite o seu nome" required maxlength="100" id="idname" name="nome"></label><br>
+          <label>Email: <input type="email" placeholder="Digite o seu e-mail" required maxlength="30" id="idemail" name="email"></label><br>
+          <label>Telefone: <input type="number" placeholder="Digite o seu telefone" required id="idtelefone" name="tel"></label><br>
+          <label>Sexo: <input type="radio" id="fem"> Femenino <input type="radio" id="masc">Masculino<input type="radio" id="nullinform"> Não informar</label><br>
+          Carne preferida:<select name="carne" id="idcarne">
+            <option value="Bovina">Bovina</option>
+            <option value="Aves">Aves</option>
+            <option value="Suína">Suína</option>
+            <option value="Exótica">Exótica</option>
+            <option value="Frutos do mar">Frutos do mar</option>
+          </select><br>
+          Deseja receber informações por:<br>
+          <input type="checkbox" id="all" value="Todos os meios">
+          <label> Todos os meios</label><br>
+          <input type="checkbox" id="sms" value="SMS">
+          <label> SMS</label><br>
+          <input type="checkbox" id="email" value="E-mail">
+          <label> E-mail</label><br>
+          <input type="checkbox" id="ligacao" value="Ligação">
+          <label> Ligação</label><br>
+          <button id="button" type="button">Cadastrar</button>
+        </form>
+      </div>
   </body>
 </html>
