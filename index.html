@@ -165,30 +165,97 @@
         <h1 class="inform">CADASTRAR</h1>
         <hr style="width: 50%; text-align: left" />
       </div>
-      <div id="forms">
+      <div class="forms">
         <form method="post">
-          <label>Nome: <input type="text" placeholder="Digite o seu nome" required maxlength="100" id="idname" name="nome"></label><br>
-          <label>Email: <input type="email" placeholder="Digite o seu e-mail" required maxlength="30" id="idemail" name="email"></label><br>
-          <label>Telefone: <input type="number" placeholder="Digite o seu telefone" required id="idtelefone" name="tel"></label><br>
-          <label>Sexo: <input type="radio" id="fem"> Femenino <input type="radio" id="masc">Masculino<input type="radio" id="nullinform"> Não informar</label><br>
-          Carne preferida:<select name="carne" id="idcarne">
-            <option value="Bovina">Bovina</option>
-            <option value="Aves">Aves</option>
-            <option value="Suína">Suína</option>
-            <option value="Exótica">Exótica</option>
-            <option value="Frutos do mar">Frutos do mar</option>
-          </select><br>
-          Deseja receber informações por:<br>
-          <input type="checkbox" id="all" value="Todos os meios">
-          <label> Todos os meios</label><br>
-          <input type="checkbox" id="sms" value="SMS">
-          <label> SMS</label><br>
-          <input type="checkbox" id="email" value="E-mail">
-          <label> E-mail</label><br>
-          <input type="checkbox" id="ligacao" value="Ligação">
-          <label> Ligação</label><br>
-          <button id="button" type="button">Cadastrar</button>
+          <div class="form-group">
+            <label class="labelform" for="idname">Nome: </label>
+            <input
+              type="text"
+              id="idname"
+              name="nome"
+              placeholder="Digite o seu nome"
+              required
+              maxlength="100"
+            />
+          </div>
+          <div class="form-group">
+            <label class="labelform" for="idemail">Email: </label>
+            <input
+              type="email"
+              id="idemail"
+              name="email"
+              placeholder="Digite o seu e-mail"
+              required
+              maxlength="30"
+            />
+          </div>
+          <div class="form-group">
+            <label class="labelform" for="idtelefone">Telefone: </label>
+            <input
+              type="tel"
+              id="idtelefone"
+              name="tel"
+              placeholder="Digite o seu telefone"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label class="labelselect">Sexo:</label>
+            <input type="radio" id="fem" name="sexo" /> Feminino
+            <input type="radio" id="masc" name="sexo" /> Masculino
+            <input type="radio" id="nullinform" name="sexo" /> Não informar
+          </div>
+          <div class="form-group" id="steakprefer">
+            <label for="idcarne">Carne preferida:</label>
+            <select name="carne" id="idcarne">
+              <option value="Bovina">Bovina</option>
+              <option value="Aves">Aves</option>
+              <option value="Suína">Suína</option>
+              <option value="Exótica">Exótica</option>
+              <option value="Frutos do mar">Frutos do mar</option>
+            </select>
+          </div>
+          <div class="form-group" id="sendmsg">
+            <label>Deseja receber informações por: </label>
+            <div>
+              <input type="checkbox" id="all" value="Todos os meios" />
+              <label for="all">Todos os meios</label>
+            </div>
+            <div>
+              <input type="checkbox" id="sms" value="SMS" />
+              <label for="sms">SMS</label>
+            </div>
+            <div>
+              <input type="checkbox" id="email" value="E-mail" />
+              <label for="email">E-mail</label>
+            </div>
+            <div>
+              <input type="checkbox" id="ligacao" value="Ligação" />
+              <label for="ligacao">Ligação</label>
+            </div>
+          </div>
+          <div class="form-group" id="button-end">
+            <button id="button" type="button">Cadastrar</button>
+          </div>
         </form>
       </div>
+    </div>
+    <div class="footer">
+      <div class="locationText">
+        <h2>Localização</h2>
+        <h4>
+          Rua Voluntários da Pátria, 340 loja F - Botafogo - Rio de Janeiro - RJ
+        </h4>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.8799600129164!2d-43.19642092468825!3d-22.95464757922142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997fe09f122171%3A0xcb6578915f0cf2be!2sR.%20Volunt%C3%A1rios%20da%20P%C3%A1tria%2C%20340%20-%20f%20-%20Botafogo%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022270-016!5e0!3m2!1spt-BR!2sbr!4v1715713551480!5m2!1spt-BR!2sbr"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
   </body>
 </html>
