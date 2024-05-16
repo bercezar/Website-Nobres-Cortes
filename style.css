@@ -35,7 +35,7 @@
     display: grid;
     margin: auto;
     grid-template-columns: repeat(auto-fit, minmax(200em, 1fr));
-    gap: 4em;
+    gap: 2em;
     justify-items: center;
     align-items: center;
   }
@@ -261,12 +261,12 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    height: auto;
+    background-color: #ff4500;
+    width: 100%;
   }
   .locationText {
-    padding: 20px;
-    width: 100%;
-    background-color: orangered;
-    display: block;
+    padding: 1.3em;
     justify-content: center;
     text-align: center;
     color: white;
@@ -274,5 +274,45 @@
 
   iframe {
     width: 100%;
+  }
+
+  .footer.information {
+    color: black;
+    padding: 0;
+    height: auto;
+    display: inline-flex;
+    justify-content: center;
+    margin-left: 35em;
+    margin: auto;
+  }
+  /* 
+  .links {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    text-align: justify;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 8em;
+  }
+
+  .links a {
+    text-decoration: none;
+    padding: 0.2em;
+    font-size: 1.1em;
+    color: white;
+  }
+
+  .links a:hover {
+    color: black;
+  } */
+  .slogan img {
+    width: 90%;
+    padding-left: 1.1em;
+  }
+  .contacts {
+    display: inline-flex;
+    text-align: center;
+    font-size: 0.9em;
   }
 }
