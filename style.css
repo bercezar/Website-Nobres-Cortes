@@ -1,15 +1,15 @@
-@media screen and (max-width: 2500px) {
+@media screen and (max-width: 8800px) {
   body {
-    margin: auto;
-    width: auto;
-    height: auto;
-    background-image: url("Images/image_background.jpg");
-    background-size: cover;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
     position: absolute;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif;
     overflow-x: hidden;
+    background-color: gray;
   }
   body::before {
     content: "";
@@ -22,6 +22,7 @@
     z-index: -1;
   }
 
+  /* Cabeçalho com logo e links de acessos */
   #header {
     margin-top: 0em;
     height: 22em;
@@ -69,15 +70,119 @@
     margin-top: 1em;
     margin-left: 3em;
   }
+  /* Fim do cabeçalho */
 
+  /* Carrossel com desmonstração dos tipos de carnes */
+  .slider {
+    margin: 0 auto;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+  }
+
+  .slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+  }
+
+  .slides input {
+    display: none;
+  }
+
+  .slide {
+    width: 25%;
+    position: relative;
+    transition: 1.5s;
+  }
+
+  .slide img {
+    width: 100%;
+  }
+
+  .manual-navigation,
+  .navigation-auto {
+    position: absolute;
+    width: calc(
+      100% - 40px
+    ); /* Largura máxima dos botões ajustada para o tamanho da .slider */
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px; /* Distância do fundo */
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+  }
+
+  .manual-button,
+  .navigation-auto div {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .manual-button:not(:last-child),
+  .navigation-auto div:not(:last-child) {
+    margin-right: 15px; /* Espaçamento entre os botões */
+  }
+
+  #radio1:checked ~ .first {
+    margin-left: 0%;
+  }
+
+  #radio2:checked ~ .first {
+    margin-left: -25%;
+  }
+
+  #radio3:checked ~ .first {
+    margin-left: -50%;
+  }
+
+  #radio4:checked ~ .first {
+    margin-left: -75%;
+  }
+
+  #radio1:checked ~ .navigation-auto .auto-button1,
+  #radio2:checked ~ .navigation-auto .auto-button2,
+  #radio3:checked ~ .navigation-auto .auto-button3,
+  #radio4:checked ~ .navigation-auto .auto-button4 {
+    background-color: orange;
+  }
+
+  .slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+  .slide .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Great Vibes";
+    color: white;
+    font-size: 24px;
+    z-index: 2;
+  }
+  /* Fim do carrosel */
+
+  /* Quadro informativo da empresa */
   .middle.informs {
-    margin: auto;
-    width: 90%;
+    margin: 0 auto;
+    width: 100%;
     height: auto;
-    margin-top: 12.6em;
     background-color: whitesmoke;
     color: black;
-    border-radius: 1em;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -110,13 +215,15 @@
     padding: 2em;
     line-height: 1.8em;
   }
+  /* Fim do quadro informativo */
+
+  /* Informativo dos cortes oferecidos */
   .middle.cut {
     margin: auto;
     width: 90%;
     height: auto;
     position: relative;
     padding-top: 10em;
-    /* background-color: whitesmoke; */
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -167,7 +274,9 @@
     width: auto;
     height: auto;
   }
+  /* Fim dos informativos dos cortes */
 
+  /* Dúvidas frequentes */
   .middle.doubts {
     margin: auto;
     width: 90%;
@@ -199,6 +308,10 @@
     padding: 2em;
     flex-direction: column;
   }
+
+  /* Fim das dúvidas frequentes */
+
+  /* Formulário para cadastro de clientes  */
   .middle.register {
     margin: auto;
     width: 90%;
@@ -256,7 +369,9 @@
     justify-content: center;
     align-items: center;
   }
+  /* Fim do formulário */
 
+  /* Rodapé da página com localização google e imagem do slogan */
   .footer {
     display: flex;
     align-items: center;
@@ -285,27 +400,6 @@
     margin-left: 35em;
     margin: auto;
   }
-  /* 
-  .links {
-    display: flex;
-    margin: auto;
-    flex-direction: column;
-    text-align: justify;
-    flex-wrap: wrap;
-    position: absolute;
-    left: 8em;
-  }
-
-  .links a {
-    text-decoration: none;
-    padding: 0.2em;
-    font-size: 1.1em;
-    color: white;
-  }
-
-  .links a:hover {
-    color: black;
-  } */
   .slogan img {
     width: 90%;
     padding-left: 1.1em;
@@ -315,4 +409,5 @@
     text-align: center;
     font-size: 0.9em;
   }
+  /* Fim do rodapé */
 }
