@@ -201,14 +201,11 @@
       </div>
     </div>
     <div class="middle register">
-      <div class="title">
-        <h1 class="inform" id="register">CADASTRAR</h1>
-        <hr style="width: 50%; text-align: left" />
-      </div>
       <div class="forms">
         <form method="post">
+          <h2>Cadastre-se</h2>
           <div class="form-group">
-            <label class="labelform" for="idname">Nome: </label>
+            <label class="labelform" for="idname"></label>
             <input
               type="text"
               id="idname"
@@ -219,7 +216,7 @@
             />
           </div>
           <div class="form-group">
-            <label class="labelform" for="idemail">Email: </label>
+            <label class="labelform" for="idemail"></label>
             <input
               type="email"
               id="idemail"
@@ -230,7 +227,7 @@
             />
           </div>
           <div class="form-group">
-            <label class="labelform" for="idtelefone">Telefone: </label>
+            <label class="labelform" for="idtelefone"></label>
             <input
               type="tel"
               id="idtelefone"
@@ -240,13 +237,16 @@
             />
           </div>
           <div class="form-group">
-            <label class="labelselect">Sexo:</label>
-            <input type="radio" id="fem" name="sexo" /> Feminino
-            <input type="radio" id="masc" name="sexo" /> Masculino
-            <input type="radio" id="nullinform" name="sexo" /> Não informar
+            <label class="labelselect"><p>Sexo:</p></label>
+            <input type="radio" id="fem" name="sexo" />
+            <p>Femenino</p>
+            <input type="radio" id="masc" name="sexo" />
+            <p>Masculino</p>
+            <input type="radio" id="nullinform" name="sexo" />
+            <p>Não informar</p>
           </div>
           <div class="form-group" id="steakprefer">
-            <label for="idcarne">Carne preferida:</label>
+            <label for="idcarne"><p>Carne preferida:</p> </label>
             <select name="carne" id="idcarne">
               <option value="Bovina">Bovina</option>
               <option value="Aves">Aves</option>
@@ -256,22 +256,22 @@
             </select>
           </div>
           <div class="form-group" id="sendmsg">
-            <label>Deseja receber informações por: </label>
+            <p>Deseja receber informações por:</p>
             <div>
               <input type="checkbox" id="all" value="Todos os meios" />
-              <label for="all">Todos os meios</label>
+              <label for="all"><p>Todos os meios</p></label>
             </div>
             <div>
               <input type="checkbox" id="sms" value="SMS" />
-              <label for="sms">SMS</label>
+              <label for="sms"><p>SMS</p></label>
             </div>
             <div>
               <input type="checkbox" id="email" value="E-mail" />
-              <label for="email">E-mail</label>
+              <label for="email"><p>E-mail</p></label>
             </div>
             <div>
               <input type="checkbox" id="ligacao" value="Ligação" />
-              <label for="ligacao">Ligação</label>
+              <label for="ligacao"><p>Ligação</p></label>
             </div>
           </div>
           <div class="form-group" id="button-end">
@@ -300,20 +300,19 @@
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
-    <div class="footer">
-      <div class="footer information">
-        <!-- <div class="links">
-          <a href="index.html">Home</a>
-          <a href="#text">Quem Somos</a>
-          <a href="#doubt">Dúvidas frequentes</a>
-          <a href="#cut">Cortes</a>
-          <a href="#register">Cadastrar</a>
-        </div> -->
-        <div class="contacts" id="contacts">
-          <h3>Nobres Cortes:</h3>
-          <h3>(21)4002-8922</h3>
-          <h3>(21)9721-30412</h3>
-        </div>
+    <div class="footer information">
+      <!-- <div class="links">
+        <a href="index.html">Home</a>
+        <a href="#text">Quem Somos</a>
+        <a href="#doubt">Dúvidas frequentes</a>
+        <a href="#cut">Cortes</a>
+        <a href="#register">Cadastrar</a>
+      </div> -->
+      <div class="contacts" id="contacts">
+        <h3>Nobres Cortes:</h3>
+        <h3>(21)4002-8922</h3>
+      <div>
+        <h4>@Nobres cortes - Bernardo Cezar(dev)</h4>
       </div>
     </div>
     <script src="script.js"></script>

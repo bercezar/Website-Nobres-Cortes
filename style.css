@@ -1,15 +1,15 @@
-@media screen and (max-width: 8800px) {
+@media screen and (max-width: 3000px) {
   body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100vh;
     position: absolute;
+    background-color: #43120f; /*Mudança de cor de fundo*/
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif;
     overflow-x: hidden;
-    background-color: gray;
   }
   body::before {
     content: "";
@@ -313,55 +313,96 @@
 
   /* Formulário para cadastro de clientes  */
   .middle.register {
-    margin: auto;
-    width: 90%;
-    height: auto;
-    /* position: relative; */
-    padding-top: 10em;
-    padding-bottom: 10em;
-    /* background-color: whitesmoke; */
+    width: 100%;
+    max-height: 440px;
+    /* max-width: 2000px; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(Images/mascoteBBQ.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    margin: 10em auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
   }
+
   .forms {
     background-color: white;
-    padding: 15px;
+    padding: 20px;
+    margin-left: 35px;
+    border: 3px solid black;
     border-radius: 2em;
-    width: 60%;
-    height: auto;
-    margin: auto;
-    font-family: Arial, sans-serif;
-    font-style: oblique;
+    width: 25%;
+    height: 100%;
+    margin-right: 0;
     display: flex;
     flex-direction: column;
+  }
+
+  .forms h2 {
+    color: sienna;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
   }
 
   input {
     border: none;
     text-transform: none;
   }
-  input:focus {
-    border: 0.5px solid #555;
-    border-radius: 1em;
-  }
+
   .form-group {
     display: flex;
     padding: 20px;
     margin: auto;
-    padding: auto;
     justify-content: center;
     align-items: center;
+    line-height: 2.4;
   }
+  .form-group p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    margin: 0 5px 0 0;
+  }
+
   input[type="text"],
   input[type="email"],
   input[type="tel"],
   option {
-    width: 30%;
-    text-align: center;
+    width: 100%;
+    text-align: left;
+    font-size: 1em;
+    padding-block: 8px;
+    padding-inline: 5px;
+    border: none;
+    border-bottom: 1px solid gray;
   }
 
+  input::placeholder {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    opacity: 0.7;
+    color: black;
+    opacity: 0.2;
+  }
+
+  input {
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+    outline: 0;
+  }
+
+  #sendmsg {
+    display: inline-block;
+  }
+
+  .form-group div {
+    display: inline-flex;
+    align-items: center;
+  }
   #button-end {
     padding: 5px;
     border-radius: 1em;
@@ -395,8 +436,9 @@
     color: black;
     padding: 0;
     height: auto;
-    display: inline-flex;
+    display: inline-block;
     justify-content: center;
+    text-align: center;
     margin-left: 35em;
     margin: auto;
   }
@@ -405,9 +447,9 @@
     padding-left: 1.1em;
   }
   .contacts {
-    display: inline-flex;
     text-align: center;
     font-size: 0.9em;
   }
+
   /* Fim do rodapé */
 }
