@@ -1,15 +1,23 @@
 let count = 1;
 document.getElementById("radio1").checked = true;
 
-setInterval(function () {
-  nextImage();
-}, 3500);
+let intervalId = setInterval(nextImage, 3500);
 
 function nextImage() {
   count++;
   if (count > 4) count = 1;
 
   document.getElementById("radio" + count).checked = true;
+}
+
+function acao(x) {
+  count = x;
+  resetInterval();
+}
+
+function resetInterval() {
+  clearInterval(intervalId);
+  intervalId = setInterval(nextImage, 3500);
 }
 
 var acc = document.getElementsByClassName("accordion");
