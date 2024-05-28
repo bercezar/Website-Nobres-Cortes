@@ -5,21 +5,9 @@
     width: 100%;
     height: 100vh;
     position: absolute;
-    background-color: #43120f; /*Mudança de cor de fundo*/
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
+    background-color: white;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     overflow-x: hidden;
-  }
-  body::before {
-    content: "";
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
   }
 
   /* Cabeçalho com logo e links de acessos */
@@ -27,7 +15,6 @@
     margin-top: 0em;
     height: 22em;
     background-color: #43120f;
-    border-radius: 1em;
     border-color: goldenrod;
     scroll-behavior: auto;
     display: flex;
@@ -79,7 +66,6 @@
     height: 400px;
     overflow: hidden;
     position: relative;
-    border-radius: 10px;
   }
 
   .slides {
@@ -160,7 +146,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     z-index: 1;
   }
 
@@ -178,14 +164,16 @@
 
   /* Quadro informativo da empresa */
   .middle.informs {
-    margin: 0 auto;
-    width: 100%;
+    margin: 40px auto;
+    width: 80%;
     height: auto;
-    background-color: whitesmoke;
-    color: black;
+    background-color: #ffff;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 50px;
+    box-shadow: 0px 5px 5px 5px gray;
   }
 
   .title {
@@ -198,22 +186,24 @@
     font-size: 1.8em;
   }
 
-  .img_text {
+  .imgtext {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  #cattle {
-    width: 20em;
-    max-width: 100%;
-    margin-left: 2em;
-    margin: auto;
-  }
   .text {
     font-size: 1em;
-    text-align: justify;
-    padding: 2em;
+    text-align: center;
+    margin: 0 10em 0 10em;
     line-height: 1.8em;
+    color: black;
+  }
+  #cattle {
+    width: 20em;
+    width: 10%;
+    margin-bottom: 2em;
+    filter: drop-shadow(-10px 10px 8px #7d7c7c);
   }
   /* Fim do quadro informativo */
 
@@ -276,67 +266,124 @@
   }
   /* Fim dos informativos dos cortes */
 
+  /* Quadro informativo*/
+  .imgtext.times {
+    height: 50%;
+    margin: 10em 0 5em 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(Images/artGrill.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 20px 20px 70px 70px black;
+    flex-direction: column;
+    font-size: x-large;
+  }
+
+  .imgtext.times h1 {
+    color: goldenrod;
+    font-family: "Dynapuff", cursive;
+    text-shadow: 15px -10px 10px black;
+  }
+
+  .imgtext.times h3 {
+    color: wheat;
+    text-align: center;
+    font-family: "Dynapuff", cursive;
+    text-shadow: 15px -10px 10px black;
+  }
+
+  /* fim do Quadro informativo */
   /* Dúvidas frequentes */
   .middle.doubts {
     margin: auto;
-    width: 90%;
-    height: auto;
-    position: relative;
-    padding-top: 10em;
-    /* background-color: whitesmoke; */
+    width: 60%;
+    padding: 5em 0 5em 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
+    position: relative;
   }
 
-  #doubts {
-    flex-direction: column;
+  .accordion {
+    background-color: #ff6f3c;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
     display: flex;
-    width: 90%;
-    margin: auto;
-    height: auto;
-    text-align: justify;
     justify-content: center;
     align-items: center;
-  }
-  .cards.doubt {
-    background-color: white;
-    border-radius: 2em;
-    width: 60vw;
-    margin: 1em;
-    padding: 2em;
-    flex-direction: column;
+    border: none;
+    outline: none;
+    transition: 0.5s;
   }
 
+  .active,
+  .accordion:hover {
+    background-color: #ff5c24;
+  }
+
+  .panel {
+    background-color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    box-shadow: 0 2px 4px 1px gray;
+  }
+  .panel p {
+    height: 50px;
+    font-size: 1.15em;
+    padding: 40px;
+  }
+
+  .panel h3 {
+    font-size: 1.15em;
+    padding: 10px;
+    display: flex;
+    position: absolute;
+    float: left;
+  }
+
+  .accordion:after {
+    content: "\25BC";
+    height: auto;
+    font-size: 15px;
+    color: black;
+    margin-left: 10px;
+  }
+
+  .active:after {
+    content: "\25B2";
+  }
   /* Fim das dúvidas frequentes */
 
   /* Formulário para cadastro de clientes  */
-  .middle.register {
-    width: 100%;
-    max-height: 440px;
-    /* max-width: 2000px; */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  .register {
+    display: flex;
+    max-width: 100%;
+    max-height: 490px;
+    margin: 12em 0 12em 0;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       url(Images/mascoteBBQ.jpg);
     background-position: right;
+    background-size: cover;
     background-repeat: no-repeat;
-    margin: 10em auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
   }
-
   .forms {
     background-color: white;
-    padding: 20px;
+    padding: 40px;
     margin-left: 35px;
-    border: 3px solid black;
+    border: 2px solid black;
     border-radius: 2em;
     width: 25%;
-    height: 100%;
-    margin-right: 0;
+    height: auto;
     display: flex;
+    text-align: center;
     flex-direction: column;
   }
 
@@ -347,19 +394,6 @@
       sans-serif;
   }
 
-  input {
-    border: none;
-    text-transform: none;
-  }
-
-  .form-group {
-    display: flex;
-    padding: 20px;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    line-height: 2.4;
-  }
   .form-group p {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
@@ -395,20 +429,38 @@
     outline: 0;
   }
 
-  #sendmsg {
-    display: inline-block;
+  .form-group {
+    display: flex;
+    padding: 20px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    line-height: 2.4;
   }
 
   .form-group div {
     display: inline-flex;
     align-items: center;
   }
+
   #button-end {
     padding: 5px;
     border-radius: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  #sendmsg {
+    display: inline-block;
+  }
+
+  #textRegister {
+    color: wheat;
+    text-align: center;
+    padding-left: 70px;
+    font-size: 1.5em;
+    font-family: "Calligraffitti variant0", Tofu;
   }
   /* Fim do formulário */
 
@@ -443,8 +495,8 @@
     margin: auto;
   }
   .slogan img {
-    width: 90%;
-    padding-left: 1.1em;
+    width: 100%;
+    height: 400px;
   }
   .contacts {
     text-align: center;

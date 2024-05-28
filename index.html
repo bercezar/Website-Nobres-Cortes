@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <title>NobresCortes:ExperiênciaPremium&SaboresExóticos</title>
-    <link rel="stylesheet" href="style.css" />
     <link name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="header">
@@ -17,7 +17,6 @@
       </div>
       <div class="grid navBar">
         <a href="index.html">Home</a>
-        <a href="#text">Quem Somos</a>
         <a href="#cut">Cortes</a>
         <a href="#register">Cadastrar</a>
         <a href="#contacts">Contato</a>
@@ -64,23 +63,23 @@
     </div>
     <div class="middle informs">
       <div class="title">
-        <h1 class="inform">QUEM SOMOS</h1>
-        <div class="img_text">
-          <img id="cattle" src="Images\cattle.png" alt="Boi mascote" />
-          <div class="text">
-            <h3>
-              Somos apaixonados por explorar os sabores premium e exóticos das
-              carnes, trazendo até você cortes nobres de qualidade superior. Há
-              quarenta anos nos dedicamos a fornecer produtos de excelência,
-              desde os renomados cortes como uruguaios e argentinos, o famoso
-              corte japonês wagyu, e até os mais frescos filés de peixes.
-              Apresentamos o melhor do Haddock Escocês, vieiras importadas e
-              tentáculos de polvo suculentos. E isso não é tudo. Oferecemos uma
-              variedade de cortes exóticos, como carne de jacaré e de avestruz,
-              e muito mais.
-            </h3>
-          </div>
+        <h1 class="inform">SOBRE NÓS</h1>
+        <div class="text">
+          <h3>
+            Somos apaixonados por explorar os sabores premium e exóticos das
+            carnes, trazendo até você cortes nobres de qualidade superior. Há
+            quarenta anos nos dedicamos a fornecer produtos de excelência,
+            desde os renomados cortes como uruguaios e argentinos, o famoso
+            corte japonês wagyu, e até os mais frescos filés de peixes.
+            Apresentamos o melhor do Haddock Escocês, vieiras importadas e
+            tentáculos de polvo suculentos. E isso não é tudo. Oferecemos uma
+            variedade de cortes exóticos, como carne de jacaré e de avestruz,
+            e muito mais.
+          </h3>
         </div>
+      </div>
+      <div class="imgtext">
+        <img id="cattle" src="Images\cattle.png" alt="Boi mascote" />
       </div>
     </div>
     <div class="middle cut">
@@ -176,31 +175,32 @@
         </div>
       </div>
     </div>
+    <div class="imgtext times">
+      <h1>Funcionamento</h1>
+      <h3>Segunda a sexta das 7:00 às 19:00
+      <br>Sábados das 7:00 às 15:00</h3>
+    </div>
     <div class="middle doubts">
-      <div class="title">
+      <!-- <div class="title">
         <h1 class="inform" id="doubt">DÚVIDAS FREQUENTES</h1>
         <hr style="width: 50%; text-align: left" />
+      </div> -->
+      <button class="accordion"><h3>Quando chega novos produtos?</h3></button>
+      <div class="panel">
+        <p>Todas as quintas-feiras chegam novos produtos.</p>
       </div>
-      <div id="doubts">
-        <div class="cards doubt">
-          <h3>Quando chega novos produtos?</h3>
-          <p>Todas as quintas-feiras chegam novos produtos</p>
-        </div>
-        <div class="cards doubt">
-          <h3>Vocês entregam em casa?</h3>
-          <p>
-            Nas compras acima de R$50,00 sua encomenda é entregue sem custos
-            adicionais no conforto do seu lar, estando ele dentro da região
-            metropolitana di Rio de Janeiro
-          </p>
-        </div>
-        <div class="cards doubt">
-          <h3>Vocês entregam aos finais de semana</h3>
-          <p>Não, nossas entregas ocorrem de segunda a sexta</p>
-        </div>
+      <button class="accordion"><h3>Vocês entregam em casa?</h3></button>
+      <div class="panel">
+        <p>Nas compras acima de R$50,00 sua encomenda é entregue sem custos
+          adicionais no conforto do seu lar, estando ele dentro da região
+          metropolitana do Rio de Janeiro.</p>
+      </div>
+      <button class="accordion"><h3>Vocês entregam aos finais de semana.</h3></button>
+      <div class="panel">
+        <p>Não, nossas entregas ocorrem de segunda a sexta.</p>
       </div>
     </div>
-    <div class="middle register">
+    <div class="register">
       <div class="forms">
         <form method="post">
           <h2>Cadastre-se</h2>
@@ -278,6 +278,9 @@
             <button id="button" type="button">Cadastrar</button>
           </div>
         </form>
+      </div>
+      <div id="textRegister">
+        <h3>Fique por dentro de tudo!<br>Cadastre-se e seja o primeiro a saber das novidades exclusivas do Nobres Cortes!</h3>
       </div>
     </div>
     <div class="footer">
