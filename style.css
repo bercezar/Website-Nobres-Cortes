@@ -9,7 +9,7 @@
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     overflow-x: hidden;
   }
-
+ 
   /* Cabeçalho com logo e links de acessos */
   #header {
     margin-top: 0em;
@@ -19,6 +19,7 @@
     scroll-behavior: auto;
     display: flex;
   }
+
   .grid {
     display: grid;
     margin: auto;
@@ -50,6 +51,7 @@
   .image {
     display: flex;
   }
+
   #imageLogo {
     width: 30em;
     max-width: 100vw;
@@ -57,6 +59,7 @@
     margin-top: 1em;
     margin-left: 3em;
   }
+
   /* Fim do cabeçalho */
 
   /* Carrossel com desmonstração dos tipos de carnes */
@@ -91,12 +94,12 @@
   .manual-navigation,
   .navigation-auto {
     position: absolute;
-    width: calc(
-      100% - 40px
-    ); /* Largura máxima dos botões ajustada para o tamanho da .slider */
+    width: calc(100% - 40px);
+    /* Largura máxima dos botões ajustada para o tamanho da .slider */
     left: 50%;
     transform: translateX(-50%);
-    bottom: 20px; /* Distância do fundo */
+    bottom: 20px;
+    /* Distância do fundo */
     display: flex;
     justify-content: center;
     z-index: 3;
@@ -113,29 +116,30 @@
 
   .manual-button:not(:last-child),
   .navigation-auto div:not(:last-child) {
-    margin-right: 15px; /* Espaçamento entre os botões */
+    margin-right: 15px;
+    /* Espaçamento entre os botões */
   }
 
-  #radio1:checked ~ .first {
+  #radio1:checked~.first {
     margin-left: 0%;
   }
 
-  #radio2:checked ~ .first {
+  #radio2:checked~.first {
     margin-left: -25%;
   }
 
-  #radio3:checked ~ .first {
+  #radio3:checked~.first {
     margin-left: -50%;
   }
 
-  #radio4:checked ~ .first {
+  #radio4:checked~.first {
     margin-left: -75%;
   }
 
-  #radio1:checked ~ .navigation-auto .auto-button1,
-  #radio2:checked ~ .navigation-auto .auto-button2,
-  #radio3:checked ~ .navigation-auto .auto-button3,
-  #radio4:checked ~ .navigation-auto .auto-button4 {
+  #radio1:checked~.navigation-auto .auto-button1,
+  #radio2:checked~.navigation-auto .auto-button2,
+  #radio3:checked~.navigation-auto .auto-button3,
+  #radio4:checked~.navigation-auto .auto-button4 {
     background-color: orange;
   }
 
@@ -160,6 +164,7 @@
     font-size: 24px;
     z-index: 2;
   }
+
   /* Fim do carrosel */
 
   /* Quadro informativo da empresa */
@@ -192,6 +197,7 @@
     justify-content: center;
     align-items: center;
   }
+
   .text {
     font-size: 1em;
     text-align: center;
@@ -199,12 +205,13 @@
     line-height: 1.8em;
     color: black;
   }
+
   #cattle {
-    width: 20em;
-    width: 10%;
+    width: 9em;
     margin-bottom: 2em;
     filter: drop-shadow(-10px 10px 8px #7d7c7c);
   }
+
   /* Fim do quadro informativo */
 
   /* Informativo dos cortes oferecidos */
@@ -218,9 +225,11 @@
     justify-content: center;
     flex-direction: column;
   }
+
   .middle.cut h3 {
     color: white;
   }
+
   .cuts {
     text-align: center;
     font-family: Courier, monospace;
@@ -256,6 +265,7 @@
     margin-top: 220px;
     position: absolute;
   }
+
   .card img {
     max-width: 240px;
     max-height: 170px;
@@ -264,6 +274,7 @@
     width: auto;
     height: auto;
   }
+
   /* Fim dos informativos dos cortes */
 
   /* Quadro informativo*/
@@ -334,6 +345,7 @@
     transition: max-height 0.3s ease-out;
     box-shadow: 0 2px 4px 1px gray;
   }
+
   .panel p {
     height: 50px;
     font-size: 1.15em;
@@ -359,6 +371,7 @@
   .active:after {
     content: "\25B2";
   }
+
   /* Fim das dúvidas frequentes */
 
   /* Formulário para cadastro de clientes  */
@@ -374,9 +387,10 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+
   .forms {
     background-color: white;
-    padding: 40px;
+    padding: 20px;
     margin-left: 35px;
     border: 2px solid black;
     border-radius: 2em;
@@ -417,7 +431,6 @@
   input::placeholder {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
-    opacity: 0.7;
     color: black;
     opacity: 0.2;
   }
@@ -462,6 +475,7 @@
     font-size: 1.5em;
     font-family: "Calligraffitti variant0", Tofu;
   }
+
   /* Fim do formulário */
 
   /* Rodapé da página com localização google e imagem do slogan */
@@ -473,6 +487,7 @@
     background-color: #ff4500;
     width: 100%;
   }
+
   .locationText {
     padding: 1.3em;
     justify-content: center;
@@ -494,10 +509,12 @@
     margin-left: 35em;
     margin: auto;
   }
+
   .slogan img {
     width: 100%;
     height: 400px;
   }
+
   .contacts {
     text-align: center;
     font-size: 0.9em;
