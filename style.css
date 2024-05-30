@@ -177,16 +177,13 @@
 
   /* Quadro informativo da empresa */
   .middle.informs {
-    margin: 40px auto;
-    width: 80%;
+    margin: 0 auto;
+    width: 100%;
     height: auto;
     background-color: #ffff;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border: 1px solid gray;
-    border-radius: 50px;
-    box-shadow: 0px 5px 5px 5px gray;
   }
 
   .title {
@@ -195,8 +192,8 @@
 
   .inform {
     text-align: center;
-    color: #cd5c5c;
-    font-size: 1.8em;
+    color: black;
+    font-size: 1.6em;
   }
 
   .imgtext {
