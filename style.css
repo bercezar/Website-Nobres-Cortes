@@ -3,18 +3,26 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
-    position: absolute;
-    background-color: white;
+    min-height: 100vh;
+    background-image: linear-gradient(
+      179deg,
+      rgb(34, 11, 11) 30.2%,
+      rgb(105, 23, 23) 103.9%
+    );
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     overflow-x: hidden;
   }
- 
+
   /* Cabeçalho com logo e links de acessos */
   #header {
     margin-top: 0em;
     height: 22em;
-    background-color: #43120f;
+    /* background-color: #43120f; */
+    background-image: linear-gradient(
+      179deg,
+      rgb(34, 11, 11) 20.2%,
+      rgb(105, 23, 23) 103.9%
+    );
     border-color: goldenrod;
     scroll-behavior: auto;
     display: flex;
@@ -120,26 +128,26 @@
     /* Espaçamento entre os botões */
   }
 
-  #radio1:checked~.first {
+  #radio1:checked ~ .first {
     margin-left: 0%;
   }
 
-  #radio2:checked~.first {
+  #radio2:checked ~ .first {
     margin-left: -25%;
   }
 
-  #radio3:checked~.first {
+  #radio3:checked ~ .first {
     margin-left: -50%;
   }
 
-  #radio4:checked~.first {
+  #radio4:checked ~ .first {
     margin-left: -75%;
   }
 
-  #radio1:checked~.navigation-auto .auto-button1,
-  #radio2:checked~.navigation-auto .auto-button2,
-  #radio3:checked~.navigation-auto .auto-button3,
-  #radio4:checked~.navigation-auto .auto-button4 {
+  #radio1:checked ~ .navigation-auto .auto-button1,
+  #radio2:checked ~ .navigation-auto .auto-button2,
+  #radio3:checked ~ .navigation-auto .auto-button3,
+  #radio4:checked ~ .navigation-auto .auto-button4 {
     background-color: orange;
   }
 
