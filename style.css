@@ -7,7 +7,7 @@
     background-image: linear-gradient(
       179deg,
       rgb(34, 11, 11) 30.2%,
-      rgb(105, 23, 23) 103.9%
+      rgb(75, 18, 18) 103.9%
     );
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     overflow-x: hidden;
@@ -18,11 +18,7 @@
     margin-top: 0em;
     height: 22em;
     /* background-color: #43120f; */
-    background-image: linear-gradient(
-      179deg,
-      rgb(34, 11, 11) 20.2%,
-      rgb(105, 23, 23) 103.9%
-    );
+    background-color: #3e1313;
     border-color: goldenrod;
     scroll-behavior: auto;
     display: flex;
@@ -218,6 +214,74 @@
   }
 
   /* Fim do quadro informativo */
+  /* Emblema*/
+  .emblem {
+    width: 100%;
+    height: auto;
+  }
+  .emblem img {
+    width: 100%;
+    margin: auto;
+  }
+  /* Fim do emblema*/
+
+  /* Carrossel informativo das marcas*/
+  @keyframes slide {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+
+    to {
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+
+  .logos {
+    overflow: hidden;
+    /* Oculta imagens fora da visualização */
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+  }
+
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 350px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  }
+
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  }
+
+  .logos:hover .logos-slide {
+    animation-play-state: paused;
+  }
+
+  .logos-slide {
+    display: inline-block;
+    animation: 10s slide infinite linear;
+    margin: 0 50px;
+  }
+
+  .logos-slide img {
+    height: 100px;
+    justify-content: center;
+    margin: auto 40px;
+  }
+
+  /* Fim do carrossel informativo das marcas*/
 
   /* Informativo dos cortes oferecidos */
   .middle.cut {
