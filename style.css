@@ -87,6 +87,8 @@
 
   .slide {
     width: 25%;
+    height: auto;
+
     position: relative;
     transition: 1.5s;
   }
@@ -386,22 +388,22 @@
   }
 
   .accordion {
-    background-color: #ff6f3c;
-    color: #444;
+    background-color: linear-gradient(to top, firebrick, blue);
+    color: white;
     cursor: pointer;
     padding: 10px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: none;
+    border: 1px double black;
     outline: none;
     transition: 0.5s;
   }
 
   .active,
   .accordion:hover {
-    background-color: #ff5c24;
+    background-color: white;
   }
 
   .panel {
@@ -412,7 +414,7 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
-    box-shadow: 0 2px 4px 1px gray;
+    /* box-shadow: 0 2px 4px 1px gray; */
   }
 
   .panel p {
@@ -463,7 +465,7 @@
     margin-left: 35px;
     border: 2px solid black;
     border-radius: 2em;
-    width: 25%;
+    width: 30%;
     height: auto;
     display: flex;
     text-align: center;
