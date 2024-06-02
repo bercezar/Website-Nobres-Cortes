@@ -240,7 +240,6 @@
 
   .logos {
     overflow: hidden;
-    /* Oculta imagens fora da visualização */
     padding: 60px 0;
     background: white;
     white-space: nowrap;
@@ -284,6 +283,125 @@
   }
 
   /* Fim do carrossel informativo das marcas*/
+
+  /* Carrosel descritivo dos cortes*/
+
+  .container {
+    width: 80em;
+    margin: 10em auto;
+    height: auto;
+    display: flex;
+    position: relative;
+  }
+  .menu {
+    width: 40%;
+    background-color: white;
+    border-right: 1px solid gray;
+    position: relative;
+    text-align: center;
+  }
+
+  .menu ul {
+    list-style: none;
+  }
+
+  .menu ul li {
+    display: flex;
+    width: 100%;
+    height: 2.5em;
+    float: right;
+    margin: 1em 0 1em 0;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .texto-menu {
+    display: flex;
+    position: absolute;
+    text-align: center;
+    right: 30%;
+  }
+
+  .imagem-menu img {
+    width: 10%;
+    position: absolute;
+  }
+
+  .imagem-menu {
+    display: flex;
+    margin-right: 1em;
+    align-items: center;
+  }
+
+  #corte_bovino:hover {
+    border-right: 0.3em solid red;
+    color: red;
+    transition: 0.3s linear;
+  }
+  #corte_suino:hover {
+    border-right: 0.3em solid pink;
+    color: pink;
+    transition: 0.3s linear;
+  }
+  #corte_exotico:hover {
+    border-right: 0.3em solid green;
+    color: green;
+    transition: 0.3s linear;
+  }
+  #corte_mar:hover {
+    border-right: 0.3em solid aqua;
+    color: aqua;
+    transition: 0.3s linear;
+  }
+
+  .content {
+    width: 60%;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .texto-content {
+    margin-top: 5em;
+    width: 100%;
+    text-align: center;
+  }
+
+  .imagem-content {
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .imagem-content img {
+    width: 10%;
+  }
+
+  .desc {
+    position: absolute;
+    top: 3em;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateY(-20px);
+    width: 100%;
+    display: none;
+  }
+
+  .desc.active-content {
+    opacity: 1;
+    transform: translateY(0);
+    display: block;
+  }
+
+  .desc.inactive {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  /* Fim do carrosel descritivo dos cortes*/
 
   /* Informativo dos cortes oferecidos */
   .middle.cut {
@@ -388,22 +506,22 @@
   }
 
   .accordion {
-    background-color: linear-gradient(to top, firebrick, blue);
-    color: white;
+    background-color: white;
+    color: black;
+    border: none;
     cursor: pointer;
     padding: 10px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px double black;
     outline: none;
     transition: 0.5s;
   }
 
   .active,
   .accordion:hover {
-    background-color: white;
+    background-color: rgb(176, 176, 176);
   }
 
   .panel {
@@ -414,7 +532,7 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
-    /* box-shadow: 0 2px 4px 1px gray; */
+    border-bottom: 1px solid gray;
   }
 
   .panel p {
@@ -427,8 +545,6 @@
     font-size: 1.15em;
     padding: 10px;
     display: flex;
-    position: absolute;
-    float: left;
   }
 
   .accordion:after {

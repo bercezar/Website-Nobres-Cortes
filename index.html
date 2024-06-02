@@ -108,6 +108,69 @@
         <img src="Images/steak-house-logo.jpg" />
       </div>
     </div>
+    <div class="container">
+      <div class="menu">
+        <ul>
+          <li id="corte_bovino" onclick="mostrar_desc('bovino')">
+            <div class="imagem-menu"><img src="Images\boi.png" alt="Bovina" /></div>
+            <div class="texto-menu"><h3>Bovina</h3></div>
+          </li>
+          <li id="corte_suino" onclick="mostrar_desc('suino')">
+            <div class="imagem-menu"><img src="Images\porco.png" alt="Suíno" /></div>
+            <div class="texto-menu"><h3>Suíno</h3></div>
+          </li>
+          <li id="corte_exotico" onclick="mostrar_desc('exotico')">
+            <div class="imagem-menu">
+              <img src="Images\coelho.png" alt="Exótico" />
+            </div>
+            <div class="texto-menu"><h3>Exótico</h3></div>
+          </li>
+          <li id="corte_mar" onclick="mostrar_desc('mar')">
+            <div class="imagem-menu">
+              <img src="Images\peixe.png" alt="Delícias do mar" />
+            </div>
+            <div class="texto-menu"><h3>Delícias do mar</h3></div>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="desc active-content bovino">
+          <div class="imagem-content"><img src="Images\boi.png" alt="Bovina" /></div>
+          <div class="texto-content">
+            <h3>
+              Cortes bovinos são altamente apreciados por sua suculência e sabor
+              robusto. Eles são ideais para churrascos, grelhados e assados,
+              proporcionando uma experiência culinária rica e satisfatória. A
+              variedade de cortes permite diferentes técnicas de preparo,
+              destacando a maciez e o sabor característico da carne bovina.
+            </h3>
+          </div>
+        </div>
+        <div class="desc suino">
+          <div class="imagem-content"><img src="Images\porco.png" alt="Bovina" /></div>
+          <div class="texto-content">
+            <h3>
+                Cortes suínos oferecem uma combinação de versatilidade e sabor. Eles são excelentes para uma ampla gama de preparos, incluindo assados, grelhados e ensopados. A carne suína é conhecida por seu sabor distinto e suculência, fazendo dela uma escolha popular para diversas receitas.
+          </div>
+        </div>
+        <div class="desc exotico">
+          <div class="imagem-content"><img src="Images\coelho.png" alt="Bovina" /></div>
+          <div class="texto-content">
+            <h3>
+                Cortes exóticos trazem sabores únicos e sofisticados à mesa. Essas carnes são ideais para quem busca inovar na cozinha, oferecendo opções diferenciadas para grelhados, assados e ensopados. A textura e o sabor dessas carnes proporcionam uma experiência gastronômica distinta e memorável.
+            </h3>
+          </div>
+        </div>
+        <div class="desc mar">
+          <div class="imagem-content"><img src="Images\peixe.png" alt="Bovina" /></div>
+          <div class="texto-content">
+            <h3>
+                Delícias do mar incluem uma variedade de frutos do mar frescos e saborosos, como peixes, camarões, lulas e mariscos. Esses ingredientes são perfeitos para pratos leves e nutritivos, podendo ser preparados grelhados, assados, fritos ou em ensopados. Os sabores do mar proporcionam uma experiência culinária rica e saudável, ideal para qualquer ocasião.
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="middle cut">
       <div class="title">
         <h1 class="inform" id="cut">NOSSOS CORTES</h1>
@@ -207,10 +270,6 @@
       <br>Sábados das 7:00 às 15:00</h3>
     </div>
     <div class="middle doubts">
-      <!-- <div class="title">
-        <h1 class="inform" id="doubt">DÚVIDAS FREQUENTES</h1>
-        <hr style="width: 50%; text-align: left" />
-      </div> -->
       <button class="accordion"><h3>Quando chega novos produtos?</h3></button>
       <div class="panel">
         <p>Todas as quintas-feiras chegam novos produtos.</p>
@@ -330,14 +389,7 @@
       ></iframe>
     </div>
     <div class="footer information">
-      <!-- <div class="links">
-        <a href="index.html">Home</a>
-        <a href="#text">Quem Somos</a>
-        <a href="#doubt">Dúvidas frequentes</a>
-        <a href="#cut">Cortes</a>
-        <a href="#register">Cadastrar</a>
-      </div> -->
-      <div class="contacts" id="contacts">
+      <div class="contacts">
         <h3>Nobres Cortes:</h3>
         <h3>(21)4002-8922</h3>
       <div>
