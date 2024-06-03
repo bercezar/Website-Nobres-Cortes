@@ -295,8 +295,9 @@
   }
   .menu {
     width: 40%;
-    background-color: white;
-    border-right: 1px solid gray;
+    background-color: goldenrod;
+    color: white;
+    border-right: 1px solid black;
     position: relative;
     text-align: center;
   }
@@ -356,7 +357,7 @@
 
   .content {
     width: 60%;
-    background-color: white;
+    background-color: goldenrod;
     position: relative;
     display: flex;
     flex-direction: column;
