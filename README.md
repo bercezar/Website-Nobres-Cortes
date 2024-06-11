@@ -1,4 +1,5 @@
 # Site Nobres Cortes: Experiência Premium & Sabores Exóticos
+![Página inicial](https://github.com/bercezar/Projeto_front_NobresCortes/blob/main/Images/P%C3%A1gina_inicial_screenshot)
 
 > O site se trata de uma reestruturação de um sitejá existente chamado [Delícias da Carne Exóticas](https://deliciasdacarn8.wixsite.com/meusite) > <br>
 > Desenvolvido apenas para fins educativos e fim pessoal, com finalidade de criar projetos.
