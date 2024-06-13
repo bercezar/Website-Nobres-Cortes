@@ -52,3 +52,17 @@ function mostrar_desc(type) {
   nova_desc.classList.add("active-content");
   desc = nova_desc;
 }
+
+let rad = document.querySelectorAll(".custom-radio");
+
+function modifyRadio(custom) {
+  let checked = true;
+  rad.forEach(function (element) {
+    if (element.classList.contains("radioChecked")) checked = false;
+  });
+  if (checked) custom.classList.add("radioChecked");
+}
+
+let boxcheck = document.querySelectorAll(".custom-radio");
+
+function modifyCheckbox(custom) {}

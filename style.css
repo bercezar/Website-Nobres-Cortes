@@ -515,7 +515,7 @@
     display: flex;
     width: 100%;
     color: white;
-    height: auto;
+    height: 700px;
     align-items: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       url(Images/mascoteBBQ.jpg);
@@ -576,6 +576,7 @@
   input {
     background-color: transparent;
     padding: 0;
+    margin-left: 10px;
     border: 0;
     outline: 0;
   }
@@ -594,6 +595,26 @@
     align-items: center;
   }
 
+  .custom-radio {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    left: -15px;
+    top: 1px;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+
+  .radioChecked {
+    transition: background-color 0.3s linear, transform 0.3s ease;
+    background-color: #ffc94a;
+    border-color: black;
+    transform: scale(1.5);
+  }
+
   #button-end {
     padding: 5px;
     border-radius: 1em;
@@ -604,6 +625,39 @@
 
   #sendmsg {
     display: inline-block;
+  }
+
+  input[type="checkbox"] {
+    margin: 0;
+    /* display: none; */
+  }
+
+  .custom-checkbox {
+    display: inline-block;
+    position: relative;
+    left: -13px;
+    width: 13px;
+    height: 13px;
+    background-color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .imgCheck {
+    width: 10px;
+  }
+
+  .imgCheck img {
+    width: 35px;
+  }
+
+  .checkboxChecked {
+    background-color: black;
+    border: 1px solid white;
   }
 
   #textRegister {

@@ -305,11 +305,14 @@
           <div class="form-group">
             <label class="labelselect"><p>Sexo:</p></label>
             <input type="radio" id="fem" name="sexo" />
-            <p>Femenino</p>
+            <div class="custom-radio" onclick="modifyRadio(this)"></div>
+            <span>Femenino</span>
             <input type="radio" id="masc" name="sexo" />
-            <p>Masculino</p>
+            <div class="custom-radio" onclick="modifyRadio(this)"></div>
+            <span>Masculino</span>
             <input type="radio" id="nullinform" name="sexo" />
-            <p>Não informar</p>
+            <div class="custom-radio" onclick="modifyRadio(this)"></div>
+            <span>Não informar</span>
           </div>
           <div class="form-group" id="steakprefer">
             <label for="idcarne"><p>Carne preferida:</p> </label>
@@ -325,18 +328,34 @@
             <p>Deseja receber informações por:</p>
             <div>
               <input type="checkbox" id="all" value="Todos os meios" />
+              <div class="custom-checkbox" onclick="modifyCheckbox(this)"></div>
+              <div class="imgCheck hide">
+                <img src="Images/img_check.png" alt="Check">
+              </div>
               <label for="all"><p>Todos os meios</p></label>
             </div>
             <div>
               <input type="checkbox" id="sms" value="SMS" />
+              <div class="custom-checkbox" onclick="modifyCheckbox(this)"></div>
+              <div class="imgCheck hide">
+                <img src="Images/img_check.png" alt="Check">
+              </div>
               <label for="sms"><p>SMS</p></label>
             </div>
             <div>
               <input type="checkbox" id="email" value="E-mail" />
+              <div class="custom-checkbox" onclick="modifyCheckbox(this)"></div>
+              <div class="imgCheck hide">
+                <img src="Images/img_check.png" alt="Check">
+              </div>
               <label for="email"><p>E-mail</p></label>
             </div>
             <div>
               <input type="checkbox" id="ligacao" value="Ligação" />
+              <div class="custom-checkbox" onclick="modifyCheckbox(this)"></div>
+              <div class="imgCheck hide">
+                <img src="Images/img_check.png" alt="Check">
+              </div>
               <label for="ligacao"><p>Ligação</p></label>
             </div>
           </div>
