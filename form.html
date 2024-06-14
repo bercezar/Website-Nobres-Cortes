@@ -1,0 +1,96 @@
+<div class="register" id="register">
+      <div class="forms">
+        <form method="post">
+          <h2>Cadastre-se</h2>
+          <div class="form-group">
+            <label class="labelform" for="idname"></label>
+            <input
+              type="text"
+              id="idname"
+              name="nome"
+              placeholder="Digite o seu nome"
+              required
+              maxlength="100"
+            />
+          </div>
+          <div class="form-group">
+            <label class="labelform" for="idemail"></label>
+            <input
+              type="email"
+              id="idemail"
+              name="email"
+              placeholder="Digite o seu e-mail"
+              required
+              maxlength="30"
+            />
+          </div>
+          <div class="form-group">
+            <label class="labelform" for="idtelefone"></label>
+            <input
+              type="tel"
+              id="idtelefone"
+              name="tel"
+              placeholder="Digite o seu telefone"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label class="labelselect"><p>Sexo:</p></label>
+            <input type="radio" id="fem" name="sexo" />
+            <div class="custom-radio" onclick="modifyRadio(this)"></div>
+            <span>Femenino</span>
+            <input type="radio" id="masc" name="sexo" />
+            <div class="custom-radio" onclick="modifyRadio(this)"></div>
+            <span>Masculino</span>
+            <input type="radio" id="nullinform" name="sexo" />
+            <div class="custom-radio" onclick="modifyRadio(this)"></div>
+            <span>Não informar</span>
+          </div>
+          <label for="idcarne"><span>Carne preferida:</span> </label>
+          <div class="dropdown">
+            <!-- <label for="idcarne"><p>Carne preferida:</p> </label> -->
+            <div class="select">
+              <span class="selected">Bovinos</span>
+              <div class="caret"></div>
+            </div>
+            <ul class="menu-dropdown">
+              <li class="active-dropdown">Bovinos</li>
+              <li>Suínos</li>
+              <li>Exótticos</li>
+              <li>Delícias do mar</li>
+            </ul>
+          </div>
+          <div class="form-group" id="sendmsg">
+            <p>Deseja receber informações por:</p>
+            <div>
+              <input type="checkbox" id="all" value="Todos os meios" />
+              <div class="custom-checkbox" onclick="modifyCheckbox(this)">
+                <img class="hide" src="Images/img_check.png" alt="Check">
+              </div>
+              <label for="all"><p>Todos os meios</p></label>
+            </div>
+            <div>
+              <input type="checkbox" id="sms" value="SMS" />
+              <div class="custom-checkbox" onclick="modifyCheckbox(this)">
+                <img class="hide" src="Images/img_check.png" alt="Check">
+              </div>
+              <label for="sms"><p>SMS</p></label>
+            </div>
+            <div>
+              <input type="checkbox" id="email" value="E-mail" />
+              <div class="custom-checkbox" onclick="modifyCheckbox(this)">
+                <img class="hide" src="Images/img_check.png" alt="Check">
+              </div>
+              <label for="email"><p>E-mail</p></label>
+            </div>
+            <div>
+              <input type="checkbox" id="ligacao" value="Ligação" />
+              <div class="custom-checkbox" onclick="modifyCheckbox(this)">
+                <img class="hide" src="Images/img_check.png" alt="Check">
+              </div>
+              <label for="ligacao"><p>Ligação</p></label>
+            </div>
+          </div>
+          <button id="button" type="button" value="Cadastrar"><span>Cadastrar</span></button>
+        </form>
+      </div>
