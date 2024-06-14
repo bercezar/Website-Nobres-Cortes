@@ -266,7 +266,7 @@
         <p>Não, nossas entregas ocorrem de segunda a sexta.</p>
       </div>
     </div>
-    <div class="register">
+    <div class="register" id="register">
       <div class="forms">
         <form method="post">
           <h2>Cadastre-se</h2>
@@ -314,15 +314,19 @@
             <div class="custom-radio" onclick="modifyRadio(this)"></div>
             <span>Não informar</span>
           </div>
-          <div class="form-group" id="steakprefer">
-            <label for="idcarne"><p>Carne preferida:</p> </label>
-            <select name="carne" id="idcarne">
-              <option value="Bovina">Bovina</option>
-              <option value="Aves">Aves</option>
-              <option value="Suína">Suína</option>
-              <option value="Exótica">Exótica</option>
-              <option value="Frutos do mar">Frutos do mar</option>
-            </select>
+          <label for="idcarne"><span>Carne preferida:</span> </label>
+          <div class="dropdown">
+            <!-- <label for="idcarne"><p>Carne preferida:</p> </label> -->
+            <div class="select">
+              <span class="selected">Bovinos</span>
+              <div class="caret"></div>
+            </div>
+            <ul class="menu-dropdown">
+              <li class="active-dropdown">Bovinos</li>
+              <li>Suínos</li>
+              <li>Exótticos</li>
+              <li>Delícias do mar</li>
+            </ul>
           </div>
           <div class="form-group" id="sendmsg">
             <p>Deseja receber informações por:</p>
@@ -355,9 +359,7 @@
               <label for="ligacao"><p>Ligação</p></label>
             </div>
           </div>
-          <div class="form-group" id="button-end">
-            <button id="button" type="button">Cadastrar</button>
-          </div>
+          <button id="button" type="button" value="Cadastrar"><span>Cadastrar</span></button>
         </form>
       </div>
       <div id="textRegister">
@@ -365,7 +367,7 @@
       </div>
     </div>
     <div class="footer">
-      <div class="locationText">
+      <div class="locationText" id="contacts">
         <span>Localização</span>
         <span>
           Rua Voluntários da Pátria, 340 loja F - Botafogo - Rio de Janeiro - RJ
