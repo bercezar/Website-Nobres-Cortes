@@ -12,3 +12,33 @@ function modifyCheckbox(custom) {
   img.classList.toggle("hide");
   custom.classList.toggle("checkboxChecked");
 }
+
+
+let dropdowns = document.querySelectorAll(".dropdown");
+
+dropdowns.forEach((dropdown) => {
+  let select = dropdown.querySelector(".select");
+  let caret = dropdown.querySelector(".caret");
+  let menu = dropdown.querySelector(".menu-dropdown");
+  let options = dropdown.querySelectorAll(".menu-dropdown li");
+  let selected = dropdown.querySelector(".selected");
+
+  select.addEventListener("click", () => {
+    select.classList.toggle("select-clicked");
+    caret.classList.toggle("caret-rotate");
+    menu.classList.toggle("menu-dropdown-open");
+  });
+  options.forEach((option) => {
+    option.addEventListener("click", () => {
+      selected.innerText = option.innerText;
+      select.classList.remove("select-clicked");
+      caret.classList.remove("caret-rotate");
+      menu.classList.remove("menu-dropdown-open");
+
+      options.forEach((option) => {
+        option.classList.remove("active-dropdown");
+      });
+      option.classList.add("active-dropdown");
+    });
+  });
+});

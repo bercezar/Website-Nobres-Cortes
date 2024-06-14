@@ -1,0 +1,196 @@
+.register {
+    display: flex;
+    width: 100%;
+    color: white;
+    height: 750px;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(Images/mascoteBBQ.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .forms {
+    background-color: transparent;
+    border: 1px solid black;
+    backdrop-filter: blur(40px);
+    padding: 15px;
+    margin-left: 55px;
+    border-radius: 2em;
+    width: 500px;
+    height: auto;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .forms span {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+
+  .form-group p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    margin: 0 5px 0 0;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  option {
+    width: 100%;
+    color: white;
+    text-align: left;
+    font-size: 1em;
+    padding-block: 8px;
+    padding-inline: 5px;
+    border: none;
+    border-bottom: 1px solid gray;
+  }
+
+  input::placeholder {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    color: white;
+    opacity: 0.5;
+  }
+
+  input {
+    background-color: transparent;
+    padding: 0;
+    margin-left: 10px;
+    border: 0;
+    outline: 0;
+  }
+
+  .dropdown {
+    min-width: 240px;
+    margin: 25px;
+    position: relative;
+    flex-wrap: wrap;
+  }
+
+  .dropdown * {
+    box-sizing: border-box;
+  }
+
+  .select {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px #ffc94a solid;
+    border-radius: 8px;
+    padding: 16px;
+    cursor: pointer;
+    transition: background 0.5s;
+  }
+
+  .select-clicked {
+    border: 2px #ffc94a solid;
+    box-shadow: 0 0 12.8px #ffc94a;
+  }
+
+  .select:hover {
+    background: #ffc94a;
+  }
+
+  .caret {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid white;
+    transition: 0.3s;
+  }
+
+  .caret-rotate {
+    transform: rotate(180deg);
+  }
+
+  .menu-dropdown {
+    list-style: none;
+    padding: 3.2px 8px;
+    background: white;
+    border: 1px #ffc94a solid;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    color: black;
+    position: absolute;
+    top: 48px;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+  }
+
+  .menu-dropdown li {
+    padding: 11.2px 8px;
+    margin: 4.8px 0;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .menu-dropdown li:hover {
+    background: #ffc94a;
+  }
+
+  .active-dropdown {
+    background: #ffc94a;
+  }
+
+  .menu-dropdown-open {
+    display: block;
+    opacity: 1;
+  }
+
+  .form-group {
+    display: flex;
+    padding: 20px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    line-height: 2.4;
+  }
+
+  .form-group div {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .custom-radio {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    left: -15px;
+    top: 1px;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+
+  .radioChecked {
+    transition: background-color 0.3s linear, transform 0.3s ease;
+    background-color: #ffc94a;
+    border-color: black;
+    transform: scale(1.5);
+  }
+
+  #button-end {
+    padding: 5px;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
