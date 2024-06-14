@@ -627,37 +627,35 @@
     display: inline-block;
   }
 
-  input[type="checkbox"] {
+  /* input[type="checkbox"] {
     margin: 0;
     /* display: none; */
-  }
 
   .custom-checkbox {
     display: inline-block;
     position: relative;
-    left: -13px;
+    left: -16px;
     width: 13px;
     height: 13px;
     background-color: white;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    /* transition: transform 0.3s ease; */
   }
 
   .hide {
     display: none;
   }
 
-  .imgCheck {
-    width: 10px;
-  }
-
-  .imgCheck img {
-    width: 35px;
+  .custom-checkbox img {
+    width: 40px;
+    position: absolute;
+    left: -11px;
+    top: -20px;
   }
 
   .checkboxChecked {
+    transition: background-color 0.3s linear, transform 0.3s ease;
     background-color: black;
-    border: 1px solid white;
   }
 
   #textRegister {
@@ -693,7 +691,6 @@
 
   .footer.information {
     color: black;
-    padding: 0;
     height: auto;
     display: inline-block;
     justify-content: center;
@@ -712,6 +709,5 @@
     text-align: center;
     font-size: 0.9em;
   }
-
-  /* Fim do rodapé */
 }
+/* Fim do rodapé */

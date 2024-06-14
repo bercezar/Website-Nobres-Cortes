@@ -63,6 +63,9 @@ function modifyRadio(custom) {
   if (checked) custom.classList.add("radioChecked");
 }
 
-let boxcheck = document.querySelectorAll(".custom-radio");
-
-function modifyCheckbox(custom) {}
+function modifyCheckbox(custom) {
+  let img = custom.querySelector("img");
+  // let box = custom.querySelector(".custom-checkbox");
+  img.classList.toggle("hide");
+  custom.classList.toggle("checkboxChecked");
+}
