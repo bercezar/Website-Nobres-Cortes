@@ -18,3 +18,7 @@
 
 Contribuições: <BR>
 `Contribuições são bem-vindas! Se você encontrar algum problema, bug ou tiver alguma sugestão de melhoria, sinta-se à vontade para abrir uma issue ou enviar um pull request.`
+
+LICENSE: <br>
+`MIT License
+Copyright (c) 2024 Bernardo Cezar Alves de Oliveira`
