@@ -98,3 +98,11 @@ dropdowns.forEach((dropdown) => {
     });
   });
 });
+
+let likebuttons = document.querySelectorAll(".card_btn");
+
+likebuttons.forEach((likebutton) => {
+  likebutton.addEventListener("click", () => {
+    likebutton.classList.toggle("card_btn--");
+  });
+});
