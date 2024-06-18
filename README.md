@@ -1,8 +1,8 @@
 # Site Nobres Cortes: Experiência Premium & Sabores Exóticos
 
 > [!NOTE]
-> O site se trata de uma reestruturação de um site já existente chamado [Delícias da Carne Exóticas](https://deliciasdacarn8.wixsite.com/meusite)<br>
-> Desenvolvido apenas para fins educativos e fim pessoal, com finalidade de criar projetos.
+> Este site se trata de uma reestruturação de um site já existente chamado [Delícias da Carne Exóticas](https://deliciasdacarn8.wixsite.com/meusite).<br>
+> Este projeto é apenas para fins educativos e fins pessoais.
 > <br>
 > Utilizando além do HTML e CSS, foi de suma importância incluir o JavaScript para uma melhor experiência ao usuário
 
