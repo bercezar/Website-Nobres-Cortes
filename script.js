@@ -1,6 +1,5 @@
 let count = 1;
 document.getElementById("radio1").checked = true;
-let desc = document.querySelector(".desc.bovino");
 let intervalId = setInterval(nextImage, 3500);
 
 function nextImage() {
@@ -41,6 +40,8 @@ for (let i = 0; i < acc.length; i++) {
   });
 }
 
+let desc = document.querySelector(".desc.bovino");
+
 function mostrar_desc(type) {
   if (desc) {
     desc.classList.remove("active-content");
@@ -56,11 +57,10 @@ function mostrar_desc(type) {
 let rad = document.querySelectorAll(".custom-radio");
 
 function modifyRadio(custom) {
-  let checked = true;
   rad.forEach(function (element) {
-    if (element.classList.contains("radioChecked")) checked = false;
+    element.classList.remove("radioChecked");
   });
-  if (checked) custom.classList.add("radioChecked");
+  custom.classList.add("radioChecked");
 }
 
 function modifyCheckbox(custom) {
