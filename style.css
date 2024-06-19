@@ -2,19 +2,12 @@
   html {
     scroll-behavior: smooth;
   }
-  /* :target {
-    scroll-margin-top: 10px;
-  } */
+
   body {
     margin: 0;
     padding: 0;
     width: 100%;
     min-height: 100vh;
-    /* background-image: linear-gradient(
-      179deg,
-      rgb(34, 11, 11) 30.2%,
-      rgb(75, 18, 18) 103.9%
-    ); */
     background-color: #3e1313;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     overflow-x: hidden;
@@ -24,7 +17,6 @@
   #header {
     margin-top: 0em;
     height: auto;
-    /* background-color: #43120f; */
     background-color: #3e1313;
     border-color: goldenrod;
     scroll-behavior: auto;
@@ -64,6 +56,7 @@
 
   .navBar a:hover {
     color: gold;
+    transition: 0.5s linear;
   }
 
   .image {
