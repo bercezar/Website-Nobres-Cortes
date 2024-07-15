@@ -888,6 +888,7 @@
   #button {
     height: auto;
     width: 100px;
+    cursor: pointer;
   }
 
   #button:hover {
