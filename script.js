@@ -1,28 +1,33 @@
+// Inicialização de variáveis e configuração inicial
 let count = 1;
 document.getElementById("radio1").checked = true;
 let intervalId = setInterval(nextImage, 3500);
 
+// Função para avançar para a próxima imagem
 function nextImage() {
   count++;
   if (count > 4) count = 1;
-
   document.getElementById("radio" + count).checked = true;
 }
 
+// Função para executar ação ao clicar em um item
 function acao(x) {
   count = x;
   resetInterval();
 }
 
+// Função para resetar o intervalo do slideshow
 function resetInterval() {
   clearInterval(intervalId);
   intervalId = setInterval(nextImage, 3500);
 }
 
+// Gerenciamento de acordeões
 let acc = document.getElementsByClassName("accordion");
 
 for (let i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function () {
+    // Fecha os acordeões não selecionados
     for (let j = 0; j < acc.length; j++) {
       if (acc[j] !== this) {
         acc[j].classList.remove("active");
@@ -30,6 +35,7 @@ for (let i = 0; i < acc.length; i++) {
       }
     }
 
+    // Alterna o estado do acordeão selecionado
     this.classList.toggle("active");
     let panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
@@ -40,6 +46,7 @@ for (let i = 0; i < acc.length; i++) {
   });
 }
 
+// Gerenciamento de descrições
 let desc = document.querySelector(".desc.bovino");
 
 function mostrar_desc(type) {
@@ -54,6 +61,7 @@ function mostrar_desc(type) {
   desc = nova_desc;
 }
 
+// Gerenciamento de seleções de rádio customizadas
 let rad = document.querySelectorAll(".custom-radio");
 
 function modifyRadio(custom) {
@@ -63,13 +71,14 @@ function modifyRadio(custom) {
   custom.classList.add("radioChecked");
 }
 
+// Gerenciamento de checkboxes customizadas
 function modifyCheckbox(custom) {
   let img = custom.querySelector("img");
-  // let box = custom.querySelector(".custom-checkbox");
   img.classList.toggle("hide");
   custom.classList.toggle("checkboxChecked");
 }
 
+// Gerenciamento de dropdowns
 let dropdowns = document.querySelectorAll(".dropdown");
 
 dropdowns.forEach((dropdown) => {
@@ -84,6 +93,7 @@ dropdowns.forEach((dropdown) => {
     caret.classList.toggle("caret-rotate");
     menu.classList.toggle("menu-dropdown-open");
   });
+
   options.forEach((option) => {
     option.addEventListener("click", () => {
       selected.innerText = option.innerText;
@@ -99,6 +109,7 @@ dropdowns.forEach((dropdown) => {
   });
 });
 
+// Gerenciamento de botões de curtir
 let likebuttons = document.querySelectorAll(".card_btn");
 
 likebuttons.forEach((likebutton) => {
